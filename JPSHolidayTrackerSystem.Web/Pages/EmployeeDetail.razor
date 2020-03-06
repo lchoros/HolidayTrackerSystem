@@ -1,0 +1,87 @@
+﻿@page "/employeedetail/{Id}"
+@inherits EmployeeDetailBase
+
+@{ 
+    var leadingFormat = "00000";
+}
+
+<h3>Employee Detail</h3>
+
+<section>
+    <h1 class="page-title">Details for @Employee.FirstName @Employee.LastName</h1>
+
+    <div class="col-12 row">
+        <div ckass="col-xs-12 col-sm-4">
+            <div class="form-group row">
+                <label class="col-sm-4 col-form-label">ID</label>
+                <div class="col-sm-8">
+                    <label typeof="text" class="form-control-plaintext">@Employee.Id.ToString(leadingFormat)</label>
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label class="col-sm-4 col-form-label">First name</label>
+                <div class="col-sm-8">
+                    <label type="text" readonly class="form-control-plaintext">@Employee.FirstName</label>
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label class="col-sm-4 col-form-label">Last name</label>
+                <div class="col-sm-8">
+                    <label type="text" readonly class="form-control-plaintext">@Employee.LastName</label>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label class="col-sm-4 col-form-label">Email</label>
+                <div class="col-sm-8">
+                    <label typeof="text" class="form-control-plaintext">@Employee.Email</label>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label class="col-sm-4 col-form-label">Phone</label>
+                <div class="col-sm-8">
+                    <label typeof="text" class="form-control-plaintext">@Employee.Phone</label>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label class="col-sm-4 col-form-label">Birthdate</label>
+                <div class="col-sm-8">
+                    <label type="text" readonly class="form-control-plaintext">@Employee.BirthDate.ToShortDateString()</label>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label class="col-sm-4 col-form-label">Gender</label>
+                <div class="col-sm-8">
+                    <label type="text" readonly class="form-control-plaintext">@Employee.Gender</label>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label class="col-sm-4 col-form-label">Active</label>
+                <div class="col-sm-8">
+                    @if (Employee.IsActive)
+                    {
+                        <label type="text" readonly class="form-control-plaintext">Yes</label>
+                    }
+                    else
+                    {
+                        <label type="text" readonly class="form-control-plaintext">No</label>
+
+                    }
+                </div>
+            </div>
+            <div class="form-group row">
+                <label class="col-sm-4 col-form-label">Department</label>
+                <div class="col-sm-8">
+                    <label type="text" readonly class="form-control-plaintext">@Department</label>
+                </div>
+            </div>
+            <div class="col-sm-8">
+                <div class="track-order-map">
+                    <p>CHUJ</p>
+                    <Map Zoom="10" Markers="MapMarkers"></Map>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

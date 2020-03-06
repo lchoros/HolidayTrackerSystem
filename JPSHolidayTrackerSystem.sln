@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29806.167
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JPSHolidayTrackerSystem.Shared", "JPSHolidayTrackerSystem.Shared\JPSHolidayTrackerSystem.Shared.csproj", "{9A87FC99-3B5F-448A-AC06-118DFA67FED1}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JPSHolidayTrackerSystem.Web", "JPSHolidayTrackerSystem.Web\JPSHolidayTrackerSystem.Web.csproj", "{1B579B8A-3958-412C-A745-986C8ACBF727}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JPSHolidayTrackerSystem.Api", "JPSHolidayTrackerSystem.Api\JPSHolidayTrackerSystem.Api.csproj", "{1BC64511-31D7-407D-96D6-0F4071D0EDEE}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BethanysPieShopHRM.ComponentsLibrary", "..\..\..\Downloads\getting-started-blazor\05\demos\Demos\BethanysPieShopHRClientServer\BethanysPieShop.ComponentsLibrary\BethanysPieShopHRM.ComponentsLibrary.csproj", "{58F5B112-2220-45A8-A81F-ECD90604500E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JPSHolidayTrackerSystem.ComponentsLibrary", "JPSHolidayTrackerSystem.ComponentsLibrary\JPSHolidayTrackerSystem.ComponentsLibrary.csproj", "{ACDCB242-EF25-4749-95B0-95C2FB4F308A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9A87FC99-3B5F-448A-AC06-118DFA67FED1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A87FC99-3B5F-448A-AC06-118DFA67FED1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A87FC99-3B5F-448A-AC06-118DFA67FED1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A87FC99-3B5F-448A-AC06-118DFA67FED1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1B579B8A-3958-412C-A745-986C8ACBF727}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1B579B8A-3958-412C-A745-986C8ACBF727}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1B579B8A-3958-412C-A745-986C8ACBF727}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1B579B8A-3958-412C-A745-986C8ACBF727}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1BC64511-31D7-407D-96D6-0F4071D0EDEE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1BC64511-31D7-407D-96D6-0F4071D0EDEE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1BC64511-31D7-407D-96D6-0F4071D0EDEE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1BC64511-31D7-407D-96D6-0F4071D0EDEE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{58F5B112-2220-45A8-A81F-ECD90604500E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{58F5B112-2220-45A8-A81F-ECD90604500E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{58F5B112-2220-45A8-A81F-ECD90604500E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{58F5B112-2220-45A8-A81F-ECD90604500E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ACDCB242-EF25-4749-95B0-95C2FB4F308A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ACDCB242-EF25-4749-95B0-95C2FB4F308A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ACDCB242-EF25-4749-95B0-95C2FB4F308A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ACDCB242-EF25-4749-95B0-95C2FB4F308A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F4242403-F54E-4ED0-9B77-85937D76C8ED}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,53 @@
+﻿@page "/employeeoverview"
+@inherits EmployeeOverviewBase
+
+<h3>All Employees</h3>
+
+@if (Employees == null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>First name</th>
+                <th>Last name</th>
+                <th>Email</th>
+                <th>Phone</th>
+                <th>Department</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var employee in Employees)
+            {
+            <tr>
+                <td>@employee.Id</td>
+                <td>@employee.FirstName</td>
+                <td>@employee.LastName</td>
+                <td>@employee.Email</td>
+                <td>@employee.Phone</td>
+                <td>@employee.Department.Name</td>
+                <td>
+                    <NavLink href="@($"employeedetail/{employee.Id}")" class="btn btn-primary table-btn">
+                        <i class="fas fa-info-circle"></i>
+                    </NavLink>
+                    <NavLink href="@($"employeeedit/{employee.Id}")" class="btn btn-primary table-btn">
+                        <i class="fas fa-edit"></i>
+                    </NavLink>
+                    <button @onclick="@(() => ShowDeleteEmployeeDialog(employee.Id))" class="btn btn-danger text-white">
+                        <i class="fas fa-trash"></i>
+                    </button>
+                </td>
+            </tr>
+            }
+        </tbody>
+    </table>
+}
+<button @onclick="@QuickAddEmployee" class="btn btn-dark table-btn quick-add-btn">&nbsp;&nbsp;+&nbsp;&nbsp;</button>
+
+<AddEmployeeDialog @ref="AddEmployeeDialog" CloseEventCallback="@AddEmployeeDialog_OnDialogClose"></AddEmployeeDialog>
+<DeleteEmployeeDialog @ref="DeleteEmployeeDialog" CloseEventCallback="@DeleteEmployeeDialog_OnDialogClose"></DeleteEmployeeDialog>
